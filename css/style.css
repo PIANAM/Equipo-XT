@@ -25,6 +25,8 @@ body {
 	font-size: 22px;
 }
 
+
+
 /* Menu realizado con flexbox */ 
 /* cambiamos la lista que teniamos anteriormente por divs para poder aplicar flex y sus propiedades */
 
@@ -34,6 +36,7 @@ body {
 	padding: 10px 10px 10px 10px;
 	background-color: #fff;
 	justify-content: space-between;
+	width: 100%;
 }
 
 .redesMenu {

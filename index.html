@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">   
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -44,16 +46,18 @@
         </div> 
     </section>
 
+
+
     <!-- Sobre XT -->
     <section class="sobrext">
-        <h2 class="titulos">Sobre XT</h2>
+        <h2 class="titulos animate__animated animate__bounceInLeft">Sobre XT</h2>
         <p class="textCentrado">Somos un equipo de trabajo que se especializa en el manejo de redes sociales. Contamos con experiencia con empresas pequeñas, 
             medianas y grandes, garantizando resultados en base a las necesidades de cada cliente.</p>
     </section>
 
     <!-- Los titulos van siempre con flexbox por que ya lo tengo armado asi y no tiene sentido que lo cambie -->
     <section class="sobrext">
-        <h2 class="titulos">Nos especializamos en:</h2>
+        <h2 class="titulos animate__animated animate__bounceInLeft">Nos especializamos en:</h2>
     </section>
 
     <!-- Iconos -->
@@ -79,7 +83,7 @@
     
     <!-- Planes -->
     <section class="sobrext">
-        <h2 class="titulos">Planes:</h2>
+        <h2 class="titulos animate__animated animate__bounceInLeft">Planes:</h2>
     </section>
 
     <!-- Pla inicial -->
@@ -204,5 +208,9 @@
         </section>
     </footer>
 
+    <guión src="js/wow.min.js"></guión>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 </html>
