@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,210 +8,350 @@
     <title>XT Social Media</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">   
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style2.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
 <body>
     <!-- Menu de navegación -->
-    <header class="container-menu menu-fixed">
-        <div class="redesMenu">
-            <a href=""> <img src="/img/logoinst.png" alt="logo instagram"></a>
-            <a href=""> <img src="/img/logoface.png" alt="logo facebook"></a>
-            <a href=""> <img src="/img/logoin.png" alt="logo linkedin"></a>
-        </div>
-        <div class="logoMenu">
+    <header>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
             <a href="./index.html"> <img src="/img/logomenu.png" alt="logo XT"></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/pages/planes.html">PLANES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/pages/equipo.html">EQUIPO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/pages/trabajos.html">TRABAJOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/pages/contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <a href=""> <img src="/img/logoinst.png" alt="logo instagram"></a>
+                    <a href=""> <img src="/img/logoface.png" alt="logo facebook"></a>
+                    <a href=""> <img src="/img/logoin.png" alt="logo linkedin"></a>
+                </form>
+            </div>
         </div>
-		<nav class="navMenu">
-                <div><a href="/pages/planes.html">PLANES</a></div>
-                <div><a href="/pages/equipo.html">EQUIPO</a></div>
-                <div><a href="/pages/trabajos.html">TRABAJOS</a></div>
-                <div><a href="/pages/contacto.html">CONTACTO</a></div>
-		</nav>
-        <nav class="hamburguesa">
-            <img src="/img/hamburguesa.png" alt="menu">
-        </nav>
-	</header>
+    </nav>
+    </header>
 
     <!-- Benner principal de home -->
-    <section class="bannerPrincipal">
-        <div class="bannerMedio">
-            <img id="logoBanner" src="/img/logo-banner-desktop.png" alt="logo XT">
-            <h1>El equipo de social media<br>que tu marca necesita para <br>seguir creciendo.</h1>
-        </div> 
-        <div class="bannerMedio">
-            <img  class="ilustracion-home" src="/img/home.png" alt="ilustración personas con dispositivos">
-        </div> 
+    <section class="container-fluid bannerPrincipal">
+        <container class="container">
+            <div class="container row">
+                <div class="titulos-banner col-md-6">
+                    <img class="img-fluid" id="logoBanner" src="/img/logo-banner-desktop.png" alt="logo XT">
+                    <h1>El equipo de social media<br>que tu marca necesita para <br>seguir creciendo.</h1>
+                </div>
+                <div class="col-md-6">
+                    <img class="ilustracion-home img-fluid" src="/img/home.png" alt="ilustración personas con dispositivos">
+                </div>
+            </div>
+        </container>
     </section>
 
 
 
     <!-- Sobre XT -->
-    <section class="sobrext">
-        <h2 class="titulos animate__animated animate__bounceInLeft">Sobre XT</h2>
-        <p class="textCentrado">Somos un equipo de trabajo que se especializa en el manejo de redes sociales. Contamos con experiencia con empresas pequeñas, 
-            medianas y grandes, garantizando resultados en base a las necesidades de cada cliente.</p>
-    </section>
-
-    <!-- Los titulos van siempre con flexbox por que ya lo tengo armado asi y no tiene sentido que lo cambie -->
-    <section class="sobrext">
-        <h2 class="titulos animate__animated animate__bounceInLeft">Nos especializamos en:</h2>
+    <section class="container">
+        <div class="row">
+            <div class="offset-md-4 col-md-4 offset-md-4">
+                <h2 class="titulos animate__animated animate__bounceInLeft">Sobre XT</h2>
+            </div>
+            <div>
+                <p class="text-center">Somos un equipo de trabajo que se especializa en el manejo de redes sociales. Contamos
+                    con experiencia con empresas pequeñas, medianas y grandes, garantizando resultados en base a las necesidades de cada cliente.</p>
+            </div>
+        </div>
     </section>
 
     <!-- Iconos -->
-    <!-- Esta parte la hago con grid para ir practicando los 2 estilos -->
-    <section class="iconos-container">
-        <div class="iconosHome">
-            <img src="/img/icon1.png" alt="Análisis">
-            <p>Segmentación y planificación de la estrategia de Social Media.</p>
+    <section class="container">
+        <div class="row">
+            <div class="offset-md-4 col-md-4 offset-md-4">
+                <h2 class="titulos animate__animated animate__bounceInLeft">Nos especializamos en:</h2>
+            </div>
         </div>
-        <div class="iconosHome">
-            <img src="/img/icon2.png" alt="Administración">
-            <p>Administración y ejecución del calendario de publicaciones.</p>
-        </div>
-        <div class="iconosHome">
-            <img src="/img/icon3.png" alt="Diseño">
-            <p>Análisis de la marca, diseño y creación de piezas gráficas a medida.</p>
-        </div>
-        <div class="iconosHome">
-            <img src="/img/icon4.png" alt="Metricas">
-            <p>Monitorización, reporte y plan de acción desde analisis de resultados mensuales.</p>
-        </div>
-    </section>
-    
-    <!-- Planes -->
-    <section class="sobrext">
-        <h2 class="titulos animate__animated animate__bounceInLeft">Planes:</h2>
     </section>
 
-    <!-- Pla inicial -->
-    <section class="planes-container">
-        <div id="plan1">
-            <div class="cabeceraPlan"> <strong>INICIAL </strong></div>
-            <div class="listaPlan">
-                <div class="item-lista"><img src="../img/check.png" alt="incluye"><p>Analisis de la marca</p></div>
-                <div class="item-lista"><img src="../img/check.png" alt="incluye"><p></p>Analisis de la competencia</p></div>
-                <div class="item-lista"><img src="../img/check.png" alt="incluye"><p></p>Propuesta estetica</p></div>
-                <div class="item-lista"><img src="../img/check.png" alt="incluye"><p></p>Creación de Estrategia</p></div>
-                <div class="item-lista"><img src="../img/check.png" alt="incluye"><p></p>Planificaciòn mensual</p></div>
-                <div class="item-lista"><img src="../img/check.png" alt="incluye"><p></p>Configuración de cuentas</p></div>
-                <div class="item-lista"><img src="../img/check.png" alt="incluye"><p></p>Creación de historias destacadas</p></div>
-                <div class="item-lista"><img src="../img/check.png" alt="incluye"><p></p>12 Publicaciones mensuales en feed de instagram y facebook</p></div>
-                <div class="item-lista"><img src="../img/check.png" alt="incluye"><p></p>12 Publicaciones mensuales en historias de instagram y facebook</p></div>
-                <div class="item-lista"><img src="../img/cruz.png" alt="no incluye"><p></p>2 Publicaciones mensuales en reels con edición de video (instagram/tic toc)</p></div>
-                <div class="item-lista"><img src="../img/cruz.png" alt="no incluye"><p></p>Segmentación y pauta publicitaria</p></div>
-                <div class="item-lista"><img src="../img/cruz.png" alt="no incluye"><p></p>Reporte mensual de resultados</p></div>
-                <div class="item-lista"><img src="../img/cruz.png" alt="no incluye"><p></p>Asesoramiento de venta en redes sociales</p></div>
+    <section class="container">
+        <div class="row">
+            <div class="text-center col-md-3">
+                <img src="/img/icon1.png" alt="Análisis">
+                <p>Segmentación y planificación de la estrategia de Social Media.</p>
             </div>
-            <div class="piePlan"> <strong>$26.000 </strong></div> 
-        </div>
-        <!-- Pla intermedio -->
-        <div id="plan2">
-            <div class="cabeceraPlan"> <strong>INTERMEDIO </strong></div>
-            <div class="listaPlan">
-                <div class="item-lista"><img src="../img/check.png" alt="incluye"><p>Analisis de la marca</p></div>
-                <div class="item-lista"><img src="../img/check.png" alt="incluye"><p></p>Analisis de la competencia</p></div>
-                <div class="item-lista"><img src="../img/check.png" alt="incluye"><p></p>Propuesta estetica</p></div>
-                <div class="item-lista"><img src="../img/check.png" alt="incluye"><p></p>Creación de Estrategia</p></div>
-                <div class="item-lista"><img src="../img/check.png" alt="incluye"><p></p>Planificaciòn mensual</p></div>
-                <div class="item-lista"><img src="../img/check.png" alt="incluye"><p></p>Configuración de cuentas</p></div>
-                <div class="item-lista"><img src="../img/check.png" alt="incluye"><p></p>Creación de historias destacadas</p></div>
-                <div class="item-lista"><img src="../img/check.png" alt="incluye"><p></p>12 Publicaciones mensuales en feed de instagram y facebook</p></div>
-                <div class="item-lista"><img src="../img/check.png" alt="incluye"><p></p>12 Publicaciones mensuales en historias de instagram y facebook</p></div>
-                <div class="item-lista"><img src="../img/cruz.png" alt="no incluye"><p></p>2 Publicaciones mensuales en reels con edición de video (instagram/tic toc)</p></div>
-                <div class="item-lista"><img src="../img/cruz.png" alt="no incluye"><p></p>Segmentación y pauta publicitaria</p></div>
-                <div class="item-lista"><img src="../img/cruz.png" alt="no incluye"><p></p>Reporte mensual de resultados</p></div>
-                <div class="item-lista"><img src="../img/cruz.png" alt="no incluye"><p></p>Asesoramiento de venta en redes sociales</p></div>
+            <div class="text-center col-md-3">
+                <img src="/img/icon2.png" alt="Administración">
+                <p>Administración y ejecución del calendario de publicaciones.</p>
             </div>
-            <div class="piePlan"> <strong>$34.000 </strong></div> 
-        </div>
-        <!-- Pla avanzado -->
-        <div id="plan3">
-            <div class="cabeceraPlan"><strong>AVANZADO </strong></div>
-            <div class="listaPlan">
-                <div class="item-lista"><img src="../img/check.png" alt="incluye"><p>Analisis de la marca</p></div>
-                <div class="item-lista"><img src="../img/check.png" alt="incluye"><p></p>Analisis de la competencia</p></div>
-                <div class="item-lista"><img src="../img/check.png" alt="incluye"><p></p>Propuesta estetica</p></div>
-                <div class="item-lista"><img src="../img/check.png" alt="incluye"><p></p>Creación de Estrategia</p></div>
-                <div class="item-lista"><img src="../img/check.png" alt="incluye"><p></p>Planificaciòn mensual</p></div>
-                <div class="item-lista"><img src="../img/check.png" alt="incluye"><p></p>Configuración de cuentas</p></div>
-                <div class="item-lista"><img src="../img/check.png" alt="incluye"><p></p>Creación de historias destacadas</p></div>
-                <div class="item-lista"><img src="../img/check.png" alt="incluye"><p></p>12 Publicaciones mensuales en feed de instagram y facebook</p></div>
-                <div class="item-lista"><img src="../img/check.png" alt="incluye"><p></p>12 Publicaciones mensuales en historias de instagram y facebook</p></div>
-                <div class="item-lista"><img src="../img/cruz.png" alt="no incluye"><p></p>2 Publicaciones mensuales en reels con edición de video (instagram/tic toc)</p></div>
-                <div class="item-lista"><img src="../img/cruz.png" alt="no incluye"><p></p>Segmentación y pauta publicitaria</p></div>
-                <div class="item-lista"><img src="../img/cruz.png" alt="no incluye"><p></p>Reporte mensual de resultados</p></div>
-                <div class="item-lista"><img src="../img/cruz.png" alt="no incluye"><p></p>Asesoramiento de venta en redes sociales</p></div>
+            <div class="text-center col-md-3">
+                <img src="/img/icon3.png" alt="Diseño">
+                <p>Análisis de la marca, diseño y creación de piezas gráficas a medida.</p>
             </div>
-            <div class="piePlan"> <strong>$42.000 </strong></div> 
+            <div class="text-center col-md-3">
+                <img src="/img/icon4.png" alt="Metricas">
+                <p>Monitorización, reporte y plan de acción desde analisis de resultados mensuales.</p>
+            </div>
         </div>
     </section>
+
+    <!-- Planes -->
+    <section class="container">
+        <div class="row">
+            <div class="offset-md-4 col-md-4 offset-md-4">
+                <h2 class="titulos animate__animated animate__bounceInLeft">Planes:</h2>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Pla inicial -->
+    <section class="container">
+        <div class="row">
+
+            <!-- Pla inicial -->
+            <div class="col-md-4 efecto-planes">
+                <div class="cabeceraPlan text-center"> <strong>INICIAL </strong>
+                </div>
+                <div class="listaPlan">
+                <div class="item-lista"><img src="../img/check.png" alt="incluye">
+                    <p>Analisis de la marca</p>
+                </div>
+                <div class="item-lista"><img src="../img/check.png" alt="incluye">
+                    <p></p>Analisis de la competencia</p>
+                </div>
+                <div class="item-lista"><img src="../img/check.png" alt="incluye">
+                    <p></p>Propuesta estetica</p>
+                </div>
+                <div class="item-lista"><img src="../img/check.png" alt="incluye">
+                    <p></p>Creación de Estrategia</p>
+                </div>
+                <div class="item-lista"><img src="../img/check.png" alt="incluye">
+                    <p></p>Planificaciòn mensual</p>
+                </div>
+                <div class="item-lista"><img src="../img/check.png" alt="incluye">
+                    <p></p>Configuración de cuentas</p>
+                </div>
+                <div class="item-lista"><img src="../img/check.png" alt="incluye">
+                    <p></p>Creación de historias destacadas</p>
+                </div>
+                <div class="item-lista"><img src="../img/check.png" alt="incluye">
+                    <p></p>12 Publicaciones mensuales en feed de instagram y facebook</p>
+                </div>
+                <div class="item-lista"><img src="../img/check.png" alt="incluye">
+                    <p></p>12 Publicaciones mensuales en historias de instagram y facebook</p>
+                </div>
+                <div class="item-lista"><img src="../img/cruz.png" alt="no incluye">
+                    <p></p>2 Publicaciones mensuales en reels con edición de video (instagram/tic toc)</p>
+                </div>
+                <div class="item-lista"><img src="../img/cruz.png" alt="no incluye">
+                    <p></p>Segmentación y pauta publicitaria</p>
+                </div>
+                <div class="item-lista"><img src="../img/cruz.png" alt="no incluye">
+                    <p></p>Reporte mensual de resultados</p>
+                </div>
+                <div class="item-lista"><img src="../img/cruz.png" alt="no incluye">
+                    <p></p>Asesoramiento de venta en redes sociales</p>
+                </div>
+                </div>
+                <div class="piePlan text-center"> <strong>$26.000 </strong></div>
+            </div>
+
+            <!-- Pla intermedio -->
+            <div class="col-md-4 efecto-planes">
+                <div class="cabeceraPlan text-center"> <strong>INTERMEDIO </strong>
+                </div>
+                <div class="listaPlan">
+                <div class="item-lista"><img src="../img/check.png" alt="incluye">
+                    <p>Analisis de la marca</p>
+                </div>
+                <div class="item-lista"><img src="../img/check.png" alt="incluye">
+                    <p></p>Analisis de la competencia</p>
+                </div>
+                <div class="item-lista"><img src="../img/check.png" alt="incluye">
+                    <p></p>Propuesta estetica</p>
+                </div>
+                <div class="item-lista"><img src="../img/check.png" alt="incluye">
+                    <p></p>Creación de Estrategia</p>
+                </div>
+                <div class="item-lista"><img src="../img/check.png" alt="incluye">
+                    <p></p>Planificaciòn mensual</p>
+                </div>
+                <div class="item-lista"><img src="../img/check.png" alt="incluye">
+                    <p></p>Configuración de cuentas</p>
+                </div>
+                <div class="item-lista"><img src="../img/check.png" alt="incluye">
+                    <p></p>Creación de historias destacadas</p>
+                </div>
+                <div class="item-lista"><img src="../img/check.png" alt="incluye">
+                    <p></p>12 Publicaciones mensuales en feed de instagram y facebook</p>
+                </div>
+                <div class="item-lista"><img src="../img/check.png" alt="incluye">
+                    <p></p>12 Publicaciones mensuales en historias de instagram y facebook</p>
+                </div>
+                <div class="item-lista"><img src="../img/cruz.png" alt="no incluye">
+                    <p></p>2 Publicaciones mensuales en reels con edición de video (instagram/tic toc)</p>
+                </div>
+                <div class="item-lista"><img src="../img/cruz.png" alt="no incluye">
+                    <p></p>Segmentación y pauta publicitaria</p>
+                </div>
+                <div class="item-lista"><img src="../img/cruz.png" alt="no incluye">
+                    <p></p>Reporte mensual de resultados</p>
+                </div>
+                <div class="item-lista"><img src="../img/cruz.png" alt="no incluye">
+                    <p></p>Asesoramiento de venta en redes sociales</p>
+                </div>
+                </div>
+                <div class="piePlan text-center"> <strong>$34.000 </strong></div>
+            </div>
+
+            <!-- Pla avanzado -->
+            <div class="col-md-4 efecto-planes">
+                <div class="cabeceraPlan text-center"> <strong>AVANZADO </strong>
+                </div>
+                <div class="listaPlan">
+                <div class="item-lista"><img src="../img/check.png" alt="incluye">
+                    <p>Analisis de la marca</p>
+                </div>
+                <div class="item-lista"><img src="../img/check.png" alt="incluye">
+                    <p></p>Analisis de la competencia</p>
+                </div>
+                <div class="item-lista"><img src="../img/check.png" alt="incluye">
+                    <p></p>Propuesta estetica</p>
+                </div>
+                <div class="item-lista"><img src="../img/check.png" alt="incluye">
+                    <p></p>Creación de Estrategia</p>
+                </div>
+                <div class="item-lista"><img src="../img/check.png" alt="incluye">
+                    <p></p>Planificaciòn mensual</p>
+                </div>
+                <div class="item-lista"><img src="../img/check.png" alt="incluye">
+                    <p></p>Configuración de cuentas</p>
+                </div>
+                <div class="item-lista"><img src="../img/check.png" alt="incluye">
+                    <p></p>Creación de historias destacadas</p>
+                </div>
+                <div class="item-lista"><img src="../img/check.png" alt="incluye">
+                    <p></p>12 Publicaciones mensuales en feed de instagram y facebook</p>
+                </div>
+                <div class="item-lista"><img src="../img/check.png" alt="incluye">
+                    <p></p>12 Publicaciones mensuales en historias de instagram y facebook</p>
+                </div>
+                <div class="item-lista"><img src="../img/cruz.png" alt="no incluye">
+                    <p></p>2 Publicaciones mensuales en reels con edición de video (instagram/tic toc)</p>
+                </div>
+                <div class="item-lista"><img src="../img/cruz.png" alt="no incluye">
+                    <p></p>Segmentación y pauta publicitaria</p>
+                </div>
+                <div class="item-lista"><img src="../img/cruz.png" alt="no incluye">
+                    <p></p>Reporte mensual de resultados</p>
+                </div>
+                <div class="item-lista"><img src="../img/cruz.png" alt="no incluye">
+                    <p></p>Asesoramiento de venta en redes sociales</p>
+                </div>
+                </div>
+                <div class="piePlan text-center"> <strong>$42.000 </strong></div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Logos de clientes -->
     <section class="section-clientes">
-        <h2 class="">Cleintes que confiaron en nosotros</h2>
-        <section class="logos-container">
-            <div class="iconosHome item1">
-                <img src="/img/ombu.png" alt="ombu ">
-                <p>OMBU</p>
+        <div class="row">
+            <div class="offset-md-3 col-md-6 offset-md-3">
+                <h2 class="titulos animate__animated animate__bounceInLeft">Cleintes que confiaron en nosotros</h2>
             </div>
-            <div class="iconosHome item2">
-                <img src="/img/comahue.png" alt="comahue">
-                <p>COMAHUE</p>
-            </div>
-            <div class="iconosHome item3">
-                <img src="/img/cancat.png" alt="cancat">
-                <p>CANCAT</p>
-            </div>
-            <div class="iconosHome item4">
-                <img src="/img/confecat.png" alt="confecat">
-                <p>CONFECAT</p>
-            </div>
-            <div class="iconosHome item5">
-                <img src="/img/santista.png" alt="santista">
-                <p>SANTISTA</p>
-            </div>
-        </section>
-    </section>  
+        </div>
+        <container class="container">
+                <div class="row">
+                    <div class="offset-md-1 col-md-2 text-center">
+                        <img class="img-fluid" src="/img/ombu.png" alt="ombu ">
+                        <p>OMBU</p>
+                    </div>
+                    <div class="col-md-2 text-center">
+                        <img class="img-fluid" src="/img/comahue.png" alt="comahue">
+                        <p>COMAHUE</p>
+                    </div>
+                    <div class="col-md-2 text-center">
+                        <img class="img-fluid" src="/img/cancat.png" alt="cancat">
+                        <p>CANCAT</p>
+                    </div>
+                    <div class="col-md-2 text-center">
+                        <img class="img-fluid" src="/img/confecat.png" alt="confecat">
+                        <p>CONFECAT</p>
+                    </div>
+                    <div class="col-md-2 text-center">
+                        <img class="img-fluid" src="/img/santista.png" alt="santista">
+                        <p>SANTISTA</p>
+                    </div>
+                </div>
+        </container>
+    </section>
+            
 
     <!-- Footer -->
     <footer>
         <section class="footer1">
-
-            <div>
-                <h3 class="titulo-blanco"><strong>COMO CONTACTARNOS</strong></h3>
+            <div class="row">
+                <h3 class="titulo-blanco text-center"><strong>COMO CONTACTARNOS</strong></h3>
             </div>
-            <div>
+            <div class="text-center">
                 <p>Podés comunicarte con nosotros completando el formulario de la sección CONTACTO<br>
-                o nos podes escribir de forma directa por whatsapp.</p>
+                    o nos podes escribir de forma directa por whatsapp.</p>
             </div>
-            <div>
-                <img class="footerWhatsapp" src="/img/whatsapp.png" alt="logo whatsapp">
+            <div class="text-center">
+                <img class="img-fluid img-footer" src="/img/whatsapp.png" alt="logo whatsapp">
             </div>
-            <div>
-                <img src="/img/logofooter.png" alt="logo xt social media">
+            <div class="text-center">
+                <img class="img-fluid img-footer" src="/img/logofooter.png" alt="logo xt social media">
             </div>
-
         </section>
 
-        <section class="footer2">  
-            <div class="elemento1">
-                <p>© 2022 XT EQUIPO SOCIAL MEDIA. Todos los derechos reservados.</p>
-            </div>  
-            <div class="redes-footer">
-                <a href=""> <img src="/img/logoinst.png" alt="logo instagram"></a>
-                <a href=""> <img src="/img/logoface.png" alt="logo facebook"></a>
-                <a href=""> <img src="/img/logoin.png" alt="logo linkedin"></a>
+        <section class="footer2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <p>© 2022 XT EQUIPO SOCIAL MEDIA. Todos los derechos reservados.</p>
+                    </div>
+
+                    <div class="col-md-4 redes-footer text-end">
+                        <a href=""> <img src="/img/logoinst.png" alt="logo instagram"></a>
+                        <a href=""> <img src="/img/logoface.png" alt="logo facebook"></a>
+                        <a href=""> <img src="/img/logoin.png" alt="logo linkedin"></a>
+                    </div>
+                </div>
             </div>
         </section>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
     <guión src="js/wow.min.js"></guión>
     <script>
         new WOW().init();
     </script>
 </body>
+
 </html>

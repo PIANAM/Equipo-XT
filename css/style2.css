@@ -1,0 +1,122 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+.titulos-banner {
+    color: #fff;
+}
+
+.titulos {
+	color: #fff;
+	background-color: #F47E20;
+	text-align: center;
+	width: auto;
+	margin-top: 70px;
+    margin-bottom: 40px;
+	padding: 5px 50px 5px 50px;
+	font-size: 22px;
+}
+
+.bannerPrincipal {
+	background-image: url("../img/back-banner-desktop.png");
+	min-height: 450px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+    padding: 30px;
+}
+
+/* ----------------------- Planes ---------------------- */
+.cabeceraPlan {
+	font-size: 25px;
+	color: #fff;
+	background-image: linear-gradient(to right, #27A093, #74F1BF);
+	border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+}
+
+.efecto-planes {
+	border-radius: 10px;
+	
+}
+
+.efecto-planes {
+	transition: transform 1s;
+}
+
+
+.efecto-planes:hover {
+	transform: scale(1.03);
+}
+
+.listaPlan {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	background-color: #e4e4e4;
+	padding: 10px 20px 30px 20px;
+}
+
+.item-lista {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	margin-top: 10px;
+}
+.item-lista img {
+	height: 22px;
+}
+
+.piePlan {
+	padding: 10px;
+	font-size: 25px;
+	color: #fff;
+	background-image: linear-gradient(to left, #27A093, #74F1BF);
+	border-radius: 0px 0px 10px 10px;
+}
+
+
+/* ------------------------ LOGOS DE CLIENTES ------------------------------ */
+.section-clientes {
+	background-color: #27A093;
+	color: #fff;
+	padding-bottom: 30px;
+    margin-top: 70px;
+}
+
+
+.footer1 {
+	background-color: #777777;
+	color: #fff;
+    padding-top: 30px;
+    margin-top: 70px;
+}
+
+.footer2 {
+	margin-top: 0px;
+	background-color: #565656;
+	color: #fff;
+    padding: 10px;
+}
+
+.img-footer {
+    margin: 10px;
+    }
+
+.cabecera-personas {
+    padding: 10px;
+    font-size: 25px;
+    color: #fff;
+    background-image: linear-gradient(to right, #27A093, #74F1BF);
+    border-radius: 10px 10px 0px 0px;
+    margin-top: 30px;
+}
