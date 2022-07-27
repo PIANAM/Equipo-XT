@@ -82,6 +82,7 @@ body {
 	color: #fff;
 	background-image: linear-gradient(to left, #27A093, #74F1BF);
 	border-radius: 0px 0px 10px 10px;
+	margin-bottom: 30px;
 }
 
 
@@ -98,7 +99,7 @@ body {
 	background-color: #777777;
 	color: #fff;
     padding-top: 30px;
-    margin-top: 70px;
+    
 }
 
 .footer2 {
