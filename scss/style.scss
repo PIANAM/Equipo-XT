@@ -1,15 +1,11 @@
-
-
-
 // tipografias 
 $tipografia: 'Poppins', sans-serif;
 $tamañoTipoTitulo: 30px;
-$tamañoTipoParrafo: 18px;
-$tamañoTipoLogos: 22px;
+$tamañoTipoParrafo: 16px;
 
 // margenes
-$margenTitulo: 70px 0px 40px 0px;
-$paddingTitulo: 5px 50px 5px 50px;
+$margenTitulo: 50px 0px 15px 0px;
+$paddingTitulo: 10px 0px 10px 0px;
 
 // colores 
 $colorNaranja: #F47E20;
@@ -24,8 +20,8 @@ $colorFooter2: #3f3f3f;
 body {
     font-family: $tipografia;
 }
-.banner {
 
+.banner {
     background-image: url("../img/back-banner-desktop.png");
 	min-height: 450px;
 	background-attachment: fixed;
@@ -44,35 +40,25 @@ body {
     &__logo {
         margin-bottom: 10px;
     }
-
-    &__img {
-        margin-bottom: 20px;
-    }
 }
 
-
-.sector {
+.titulo {
     margin: $margenTitulo;
-    padding: $paddingTitulo;
-
-    &__titulo {
-        background-color: $colorNaranja;
-        width: auto;
-        margin: $margenTitulo;
-
-        &__texto {
-            font-size: $tamañoTipoTitulo;
-            text-align: center;
-            color: $colorTextoTitulos;
-        }
-
-    }
 
     &__parrafo {
         color: $colorParrafo;
         font-size: $tamañoTipoParrafo;
     }
+}
 
+.titulo__texto {
+    @extend .titulo;
+    font-size: $tamañoTipoTitulo;
+    text-align: center;
+    color: $colorTextoTitulos;
+    text-transform: uppercase;
+    background-color: $colorNaranja;
+    padding: $paddingTitulo;
 }
 
 .cards {
@@ -80,87 +66,118 @@ body {
     border-radius: 10px;
     transition: transform 1s;
 
-    &__cabecera {
-        font-size: $tamañoTipoTitulo;
-        color: $colorTextoTitulos;
-        background-image: $colorGradient;
-        border-radius: 10px 10px 0px 0px;
-    }
-
     &__lista {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
-        background-color: #d6d6d6;
+        background-color: #e7e7e7;
         padding: 2% !important;
 
         &__item {
-            display: flex;
-            flex-direction: row;
+            display: grid;
+            grid-template-columns: 1fr 15fr;
             gap: 10px;
             margin-top: 10px;
-        }
 
-        &__item img {
-            height: 22px;
-        }
-
-        &__texto {
-            color: $colorParrafo;
-            font-size: $tamañoTipoParrafo;
+            &__texto {
+                color: $colorParrafo;
+                font-size: $tamañoTipoParrafo;
+            }
         }
     }
-
-    &__pie {
-        font-size: $tamañoTipoTitulo;
-        color: $colorTextoTitulos;
-        background-image: $colorGradient;
-        border-radius: 0px 0px 10px 10px;
-        padding: 10px;
-    }
-
 }
 
 .cards:hover {
 	transform: scale(1.03);
 }
 
+/* USAMOS UN MAP PARA DARLE COLORES A LAS CABECESRAS Y LOS PIES DE LOS PLANES */
+$colorCard: (
+    /* Declaro las variables para el color de las card  */ 
+    inicial: linear-gradient(to left, #27A093, #74F1BF),
+    intermedio: linear-gradient(to left, #ac9201, #dac401),
+    avanzado: linear-gradient(to left, #000000, #4e4e4e)
+); 
+
+@each $plan, $color in $colorCard {
+    .headPlan--#{$plan} {
+        font-size: $tamañoTipoTitulo;
+        color: $colorTextoTitulos;
+        background-image: $color;
+        border-radius: 10px 10px 0px 0px;
+        padding: $paddingTitulo;
+        text-align: center;
+    }
+}
+
+@each $plan, $color in $colorCard {
+    .footPlan--#{$plan} {
+        font-size: $tamañoTipoTitulo;
+        color: $colorTextoTitulos;
+        background-image: $color;
+        border-radius: 0px 0px 10px 10px;
+        padding: $paddingTitulo;
+        text-align: center;
+        margin-bottom: 70px;
+    }
+}
+/* fin map */
+
+/* usamos un each para cambiar los iconos de la lista */
+.check-icon,
+.cruz-icon {
+    height: 22px;
+    width: 22px;
+}
+
+@each $imageIcon in check, cruz {
+    .#{$imageIcon}-icon {
+        background-image: url("../img/#{$imageIcon}.png");
+        background-size: cover;
+        background-position: center;
+    }
+}
+/* fin de each */
+
+/* USAMOS UN MIXIN PARA CAMBIAR LOS COLORES DE FONDO DE LOS SECTORES */
+@mixin sectionColor ($colorFondo, $sectionMargen, $tamFuente, $colorTexto){
+    background-color: $colorFondo;
+    padding: $sectionMargen;
+    font-size: $tamFuente;
+    color: $colorTexto;
+} 
+
 .sector-clientes {
-    background-color: $colorVerde;
-	padding-bottom: 30px;
-    margin-top: 70px;
-    text-transform: uppercase;
+    @include sectionColor ($colorVerde, 20px, 22px, #fff );
 
     &__titulo {
         font-size: $tamañoTipoTitulo;
         text-align: center;
-        color: $colorTextoTitulos;
-        margin: 50px;
+        margin: 20px;
     }
 
-    &__texto {
-        font-size: $tamañoTipoLogos;
-        color: $colorTextoTitulos;
-        text-transform: uppercase;
-    }
 }
 
 .footer {
-	background-color: $colorFooter1;
-	color: $colorTextoTitulos;
-    padding-top: 30px;
-
-    &__footer2 {
-        margin: 0px;
-        background-color: $colorFooter2;
-        color: $colorTextoTitulos;
-        padding: 10px;
-    }
-
+    @include sectionColor ($colorFooter1, 50px 0px 0px 0px, 22px, #fff );  
+   
     &__img {
         margin: 10px;
     }
-    
 }
+
+.footer2 {
+    @include sectionColor ($colorFooter2, 20px 0px 20px 0px, 18px, #fff );
+    margin-top: 20px;
+    
+    &__img {
+        margin-left: 10px;
+    }
+}
+/* FIN DE MIXIN */
+
+   
+
+    
 
 

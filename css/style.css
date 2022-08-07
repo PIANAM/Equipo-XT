@@ -20,27 +20,22 @@ body {
 .banner__logo {
   margin-bottom: 10px;
 }
-.banner__img {
-  margin-bottom: 20px;
+
+.titulo, .titulo__texto {
+  margin: 50px 0px 15px 0px;
+}
+.titulo__parrafo {
+  color: #3f3f3f;
+  font-size: 16px;
 }
 
-.sector {
-  margin: 70px 0px 40px 0px;
-  padding: 5px 50px 5px 50px;
-}
-.sector__titulo {
-  background-color: #F47E20;
-  width: auto;
-  margin: 70px 0px 40px 0px;
-}
-.sector__titulo__texto {
+.titulo__texto {
   font-size: 30px;
   text-align: center;
   color: #fff;
-}
-.sector__parrafo {
-  color: #3f3f3f;
-  font-size: 18px;
+  text-transform: uppercase;
+  background-color: #F47E20;
+  padding: 10px 0px 10px 0px;
 }
 
 .cards {
@@ -48,75 +43,141 @@ body {
   border-radius: 10px;
   transition: transform 1s;
 }
-.cards__cabecera {
-  font-size: 30px;
-  color: #fff;
-  background-image: linear-gradient(to left, #27A093, #74F1BF);
-  border-radius: 10px 10px 0px 0px;
-}
 .cards__lista {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  background-color: #d6d6d6;
+  background-color: #e7e7e7;
   padding: 2% !important;
 }
 .cards__lista__item {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 15fr;
   gap: 10px;
   margin-top: 10px;
 }
-.cards__lista__item img {
-  height: 22px;
-}
-.cards__lista__texto {
+.cards__lista__item__texto {
   color: #3f3f3f;
-  font-size: 18px;
-}
-.cards__pie {
-  font-size: 30px;
-  color: #fff;
-  background-image: linear-gradient(to left, #27A093, #74F1BF);
-  border-radius: 0px 0px 10px 10px;
-  padding: 10px;
+  font-size: 16px;
 }
 
 .cards:hover {
   transform: scale(1.03);
 }
 
+/* USAMOS UN MAP PARA DARLE COLORES A LAS CABECESRAS Y LOS PIES DE LOS PLANES */
+.headPlan--inicial {
+  font-size: 30px;
+  color: #fff;
+  background-image: linear-gradient(to left, #27A093, #74F1BF);
+  border-radius: 10px 10px 0px 0px;
+  padding: 10px 0px 10px 0px;
+  text-align: center;
+}
+
+.headPlan--intermedio {
+  font-size: 30px;
+  color: #fff;
+  background-image: linear-gradient(to left, #ac9201, #dac401);
+  border-radius: 10px 10px 0px 0px;
+  padding: 10px 0px 10px 0px;
+  text-align: center;
+}
+
+.headPlan--avanzado {
+  font-size: 30px;
+  color: #fff;
+  background-image: linear-gradient(to left, #000000, #4e4e4e);
+  border-radius: 10px 10px 0px 0px;
+  padding: 10px 0px 10px 0px;
+  text-align: center;
+}
+
+.footPlan--inicial {
+  font-size: 30px;
+  color: #fff;
+  background-image: linear-gradient(to left, #27A093, #74F1BF);
+  border-radius: 0px 0px 10px 10px;
+  padding: 10px 0px 10px 0px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.footPlan--intermedio {
+  font-size: 30px;
+  color: #fff;
+  background-image: linear-gradient(to left, #ac9201, #dac401);
+  border-radius: 0px 0px 10px 10px;
+  padding: 10px 0px 10px 0px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.footPlan--avanzado {
+  font-size: 30px;
+  color: #fff;
+  background-image: linear-gradient(to left, #000000, #4e4e4e);
+  border-radius: 0px 0px 10px 10px;
+  padding: 10px 0px 10px 0px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+/* fin map */
+/* usamos un each para cambiar los iconos de la lista */
+.check-icon,
+.cruz-icon {
+  height: 22px;
+  width: 22px;
+}
+
+.check-icon {
+  background-image: url("../img/check.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.cruz-icon {
+  background-image: url("../img/cruz.png");
+  background-size: cover;
+  background-position: center;
+}
+
+/* fin de each */
+/* USAMOS UN MIXIN PARA CAMBIAR LOS COLORES DE FONDO DE LOS SECTORES */
 .sector-clientes {
   background-color: #27A093;
-  padding-bottom: 30px;
-  margin-top: 70px;
-  text-transform: uppercase;
+  padding: 20px;
+  font-size: 22px;
+  color: #fff;
 }
 .sector-clientes__titulo {
   font-size: 30px;
   text-align: center;
-  color: #fff;
-  margin: 50px;
-}
-.sector-clientes__texto {
-  font-size: 22px;
-  color: #fff;
-  text-transform: uppercase;
+  margin: 20px;
 }
 
 .footer {
   background-color: #777777;
+  padding: 50px 0px 0px 0px;
+  font-size: 22px;
   color: #fff;
-  padding-top: 30px;
-}
-.footer__footer2 {
-  margin: 0px;
-  background-color: #3f3f3f;
-  color: #fff;
-  padding: 10px;
 }
 .footer__img {
   margin: 10px;
 }
+
+.footer2 {
+  background-color: #3f3f3f;
+  padding: 20px 0px 20px 0px;
+  font-size: 18px;
+  color: #fff;
+  margin-top: 20px;
+}
+.footer2__img {
+  margin-left: 10px;
+}
+
+/* FIN DE MIXIN */
 
 /*# sourceMappingURL=style.css.map */
