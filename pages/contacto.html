@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XT - Equipo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Menu de navegación -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container">
+                <a href="../index.html"> <img src="/img/logomenu.png" alt="logo XT"></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./planes.html">PLANES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./equipo.html">EQUIPO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./trabajos.html">TRABAJOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <a href=""> <img src="/img/logoinst.png" alt="logo instagram"></a>
+                        <a href=""> <img src="/img/logoface.png" alt="logo facebook"></a>
+                        <a href=""> <img src="/img/logoin.png" alt="logo linkedin"></a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Benner principal de home -->
+    <section class="container-fluid banner">
+        <container class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-sm-5 col-md-6">
+                    <img class="img-fluid banner__logo" src="/img/logo-banner-desktop.png" alt="logo XT">
+                    <div class="banner__titulo--color">
+                        <h3>Podés comunicarte con nosotros completando el siguiente formulario, o nos podes escribir de forma directa por whatsapp.</h3>
+                    </div>
+                    <div class="">
+                        <a href="https://wa.me/+5491167534540" target="_blank">
+                            <img class="img-fluid footer__img" src="/img/whatsapp.png" alt="logo whatsapp">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-7 col-md-6">
+                    <!-- formulario de contacto -->
+                    <section class="container contactForm">
+                        <h2>Formulario de contacto</h2>
+                        <form class="col-ml-3">
+                            <div class="row">
+                                <div class="form-group">
+                                    <label for="email">Nombre completo</label>
+                                    <input type="text" class="form-control" placeholder="Nombre y apellido" id="nombre">
+                                </div>
+                                <div class="form-group col-7">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" placeholder="ejemplo@mail.com" id="email">
+                                </div>
+                                <div class="form-group col-5">
+                                    <label for="email">Teléfono</label>
+                                    <input type="number" class="form-control" placeholder="11 2233 4455" id="telefono">
+                                </div>
+                                <div class="col-12">
+                                    <hr>
+                                </div>
+                                <div class="col-12">
+                                    <h5>Red social a trabajar</h5>
+                                </div>
+                                <div class="col-3">Facebook
+                                    <input type="radio" name="red" value="facebook">
+                                </div>
+                                <div class="col-3">Instagram
+                                    <input type="radio" name="red" value="instagram">
+                                </div>
+                                <div class="col-3">Tik Tok
+                                    <input type="radio" name="red" value="Tik Tok">
+                                </div>
+                                <div class="col-3">Twitter
+                                    <input type="radio" name="red" value="Twitter">
+                                </div>
+                                <div class="col-12">
+                                    <hr>
+                                </div>
+                                <div class="col-12">
+                                    <h5>Respuesta de mensajes de seguidores</h5>
+                                </div>
+                                <div class="col-6">Si
+                                    <input type="radio" name="respuestas" value="Si">
+                                </div>
+                                <div class="col-6">No
+                                    <input type="radio" name="respuestas" value="No">
+                                </div>
+                                <div class="col-12">
+                                    <hr>
+                                </div>
+                                <div class="col-12">
+                                    <textarea
+                                        placeholder="Contanos en detalle lo que buscas para tu marca y tus clientes."
+                                        class="form-control" name="mensaje"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary">Enviar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </container>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <section class="footer2 sectionColor">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <p>© 2022 XT EQUIPO SOCIAL MEDIA. Todos los derechos reservados.</p>
+                    </div>
+                    <div class="col-md-4 redes-footer text-end">
+                        <a href=""> <img class="footer2__img" src="/img/logoinst.png" alt="logo instagram"></a>
+                        <a href=""> <img class="footer2__img" src="/img/logoface.png" alt="logo facebook"></a>
+                        <a href=""> <img class="footer2__img" src="/img/logoin.png" alt="logo linkedin"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
+    <guión src="js/wow.min.js"></guión>
+    <script>
+        new WOW().init();
+    </script>
+
+</body>
+
+</html>

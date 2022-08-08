@@ -65,6 +65,18 @@ body {
   transform: scale(1.03);
 }
 
+.cardPersona {
+  margin: 50px 0px 50px 0px;
+}
+.cardPersona__lista {
+  padding: 40px;
+  border: 3px;
+  border-color: #27A093;
+  color: #3f3f3f;
+  background-color: #f7f7f7;
+  font-size: 16px;
+}
+
 /* USAMOS UN MAP PARA DARLE COLORES A LAS CABECESRAS Y LOS PIES DE LOS PLANES */
 .headPlan--inicial {
   font-size: 30px;
@@ -168,16 +180,44 @@ body {
 }
 
 .footer2 {
-  background-color: #3f3f3f;
+  background-color: #565656;
   padding: 20px 0px 20px 0px;
   font-size: 18px;
   color: #fff;
-  margin-top: 20px;
 }
 .footer2__img {
   margin-left: 10px;
 }
 
-/* FIN DE MIXIN */
+/* FIN DEL MIXIN */
+.contactForm {
+  background-color: #f7f7f7;
+  padding: 30px 0px 30px 20px;
+  font-size: 17px;
+  color: rgb(56, 56, 56);
+  border-radius: 15px;
+}
+
+.contactForm hr {
+  margin: 20px 0px 20px 0px;
+}
+
+.contactForm button {
+  margin: 20px 0px 0px 0px;
+  width: 40%;
+  background-color: #F47E20;
+  border: 0px;
+}
+
+.contactForm button:hover {
+  margin: 20px 0px 0px 0px;
+  width: 40%;
+  background-color: #27A093;
+  border: 0px;
+}
+
+.contactForm h2 {
+  color: #F47E20;
+}
 
 /*# sourceMappingURL=style.css.map */

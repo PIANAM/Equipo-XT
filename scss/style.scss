@@ -14,8 +14,7 @@ $colorVerde: #27A093;
 $colorGradient: linear-gradient(to left, #27A093, #74F1BF);
 $colorParrafo: #3f3f3f;
 $colorFooter1: #777777;
-$colorFooter2: #3f3f3f;
-
+$colorFooter2: #565656;
 
 body {
     font-family: $tipografia;
@@ -90,6 +89,22 @@ body {
 .cards:hover {
 	transform: scale(1.03);
 }
+
+.cardPersona {
+    margin: 50px 0px 50px 0px;
+
+    &__lista {
+        padding: 40px;
+        border: 3px;
+        border-color: $colorVerde;
+        color: $colorParrafo;
+        background-color: #f7f7f7;
+        font-size: $tamañoTipoParrafo;
+    }
+    
+    
+}
+
 
 /* USAMOS UN MAP PARA DARLE COLORES A LAS CABECESRAS Y LOS PIES DE LOS PLANES */
 $colorCard: (
@@ -168,13 +183,41 @@ $colorCard: (
 
 .footer2 {
     @include sectionColor ($colorFooter2, 20px 0px 20px 0px, 18px, #fff );
-    margin-top: 20px;
     
     &__img {
         margin-left: 10px;
     }
 }
-/* FIN DE MIXIN */
+/* FIN DEL MIXIN */ 
+
+
+.contactForm {
+    @include sectionColor (#f7f7f7, 30px 0px 30px 20px, 17px, rgb(56, 56, 56) );
+    border-radius: 15px;  
+}
+.contactForm hr {
+    margin: 20px 0px 20px 0px;
+}
+
+.contactForm button {
+    margin: 20px 0px 0px 0px;
+    width: 40%;
+    background-color: $colorNaranja;
+    border: 0px;
+}
+
+.contactForm button:hover {
+    margin: 20px 0px 0px 0px;
+    width: 40%;
+    background-color: $colorVerde;
+    border: 0px;
+}
+
+.contactForm h2 {
+    color: $colorNaranja;
+}
+
+
 
    
 
