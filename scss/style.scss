@@ -39,7 +39,12 @@ body {
     &__logo {
         margin-bottom: 10px;
     }
+
+    &__contacto {
+        min-height:100vh;
+      }
 }
+
 
 .titulo {
     margin: $margenTitulo;
@@ -173,6 +178,52 @@ $colorCard: (
 
 }
 
+.ombu {
+    @include sectionColor (#d1d1d1, 50px 0px 0px 0px, 22px, #fff );  
+    padding: 70px 0px 70px 0px;
+
+    & #ombu-logo {
+        margin-bottom: 30px;
+    }
+
+    &:hover {
+        background-color: #97cbe4;
+        transition: 1s;
+    }
+}
+
+
+
+.cancat {
+    @include sectionColor (#d1d1d1, 50px 0px 0px 0px, 22px, #fff );  
+    padding: 70px 0px 70px 0px;
+
+    & #cancat-logo {
+        margin-bottom: 30px;
+    }
+
+    &:hover {
+        background-color: #60bb46;
+        transition: 1s;
+    }
+}
+
+
+.confecat {
+    @include sectionColor (#d1d1d1, 50px 0px 0px 0px, 22px, #fff );  
+    padding: 70px 0px 70px 0px;
+
+    & #confecat-logo {
+        margin-bottom: 30px;
+    }
+
+    &:hover {
+        background-color: #000000;
+        transition: 1s;
+    }
+}
+
+
 .footer {
     @include sectionColor ($colorFooter1, 50px 0px 0px 0px, 22px, #fff );  
    
@@ -216,8 +267,6 @@ $colorCard: (
 .contactForm h2 {
     color: $colorNaranja;
 }
-
-
 
    
 

@@ -20,6 +20,9 @@ body {
 .banner__logo {
   margin-bottom: 10px;
 }
+.banner__contacto {
+  min-height: 100vh;
+}
 
 .titulo, .titulo__texto {
   margin: 50px 0px 15px 0px;
@@ -167,6 +170,51 @@ body {
   font-size: 30px;
   text-align: center;
   margin: 20px;
+}
+
+.ombu {
+  background-color: #d1d1d1;
+  padding: 50px 0px 0px 0px;
+  font-size: 22px;
+  color: #fff;
+  padding: 70px 0px 70px 0px;
+}
+.ombu #ombu-logo {
+  margin-bottom: 30px;
+}
+.ombu:hover {
+  background-color: #97cbe4;
+  transition: 1s;
+}
+
+.cancat {
+  background-color: #d1d1d1;
+  padding: 50px 0px 0px 0px;
+  font-size: 22px;
+  color: #fff;
+  padding: 70px 0px 70px 0px;
+}
+.cancat #cancat-logo {
+  margin-bottom: 30px;
+}
+.cancat:hover {
+  background-color: #60bb46;
+  transition: 1s;
+}
+
+.confecat {
+  background-color: #d1d1d1;
+  padding: 50px 0px 0px 0px;
+  font-size: 22px;
+  color: #fff;
+  padding: 70px 0px 70px 0px;
+}
+.confecat #confecat-logo {
+  margin-bottom: 30px;
+}
+.confecat:hover {
+  background-color: #000000;
+  transition: 1s;
 }
 
 .footer {
