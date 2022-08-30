@@ -1,15 +1,8 @@
-
 // tipografias 
 $tipografia: 'Poppins', sans-serif;
-$tamanoTextoTitulo: 36px;
+$tamanoTextoTitulo: 34px;
 $tamanoTextoParrafo: 18px;
 $tamanoTextoBotones: 22px;
-
-@media only screen and (min-width : 320px) and (max-width : 480px) {
-    $tamanoTextoTitulo: 30px;
-    $tamanoTextoParrafo: 16px;
-    $tamanoTextoBotones: 20px;
-}
 
 
 // margenes
@@ -25,13 +18,7 @@ $colorParrafo: #3f3f3f;
 $colorFooter1: #777777;
 $colorFooter2: #565656;
 
-body {
-    font-family: $tipografia;
-}
 
-.redes {
-    padding: 5px;
-}
 
 .banner {
     background-image: url("../img/back-banner-desktop.png");
