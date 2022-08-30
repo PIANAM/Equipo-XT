@@ -1,8 +1,16 @@
+
 // tipografias 
 $tipografia: 'Poppins', sans-serif;
 $tamanoTextoTitulo: 36px;
 $tamanoTextoParrafo: 18px;
 $tamanoTextoBotones: 22px;
+
+@media (min-width: 768px) {
+    $tamanoTextoTitulo: 30px;
+    $tamanoTextoParrafo: 16px;
+    $tamanoTextoBotones: 20px;
+}
+
 
 // margenes
 $margenTitulo: 50px 0px 15px 0px;
@@ -49,8 +57,6 @@ body {
         min-height:100vh;
       }
 }
-
-
 
 .sectionGray {
   background-color: #e4e4e4;  
