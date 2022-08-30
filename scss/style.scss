@@ -5,7 +5,7 @@ $tamanoTextoTitulo: 36px;
 $tamanoTextoParrafo: 18px;
 $tamanoTextoBotones: 22px;
 
-@media (max-width: 768px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     $tamanoTextoTitulo: 30px;
     $tamanoTextoParrafo: 16px;
     $tamanoTextoBotones: 20px;
