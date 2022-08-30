@@ -37,6 +37,7 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="pages/planes.html">PLANES</a>
                         </li>
@@ -50,10 +51,10 @@
                             <a class="nav-link active" aria-current="page" href="pages/contacto.html">CONTACTO</a>
                         </li>
                     </ul>
-                    <form class="d-flex" role="search">
-                        <a href=""> <img src="img/logoinst.png" alt="logo instagram"></a>
-                        <a href=""> <img src="img/logoface.png" alt="logo facebook"></a>
-                        <a href=""> <img src="img/logoin.png" alt="logo linkedin"></a>
+                    <form class="d-flex">
+                        <a href=""> <img class="redes" src="img/logoinst.png" alt="logo instagram"></a>
+                        <a href=""> <img class="redes" src="img/logoface.png" alt="logo facebook"></a>
+                        <a href=""> <img class="redes" src="img/logoin.png" alt="logo linkedin"></a>
                     </form>
                 </div>
             </div>
@@ -86,43 +87,43 @@
             </div>
             <div class="col-12 offset-sm-1 col-sm-10 offset-md-2 col-md-8">
                 <p class="text-center titulo__parrafo">Somos un equipo de trabajo que se especializa en el manejo de
-                    redes sociales.
+                    redes sociales de tendencia. Nuestra meta es brindar el mejor servicio a un precio accesible.<br>
                     Contamos con experiencia con empresas pequeñas, medianas y grandes, garantizando resultados en base
-                    a las
-                    necesidades de cada cliente.</p>
+                    a las necesidades de cada cliente.</p>
             </div>
         </div>
     </section>
 
     <!-- Iconos -->
-    <section class="container">
+    <section class="container-fluid sectionGray">
         <div class="row">
             <div class="titulo offset-sm-2 col-sm-8 offset-md-3 col-md-6">
                 <h2 class="titulo__texto animate__animated animate__bounceInLeft">Nos especializamos en:</h2>
             </div>
         </div>
+        <section class="container text-center">
+            <div class="row">
+                <div class="col-6 col-md-3 offset-xl-2 col-xl-2">
+                    <img class="img-fluid iconos" src="img/icon1.png" alt="Análisis">
+                    <p class="titulo__parrafo">Segmentación del público ideal para el desarrollo de una estrategia para redes sociales de tu marca.</p>
+                </div>
+                <div class="col-6 col-md-3 col-xl-2">
+                    <img class="img-fluid iconos" src="img/icon2.png" alt="Administración">
+                    <p class="titulo__parrafo">Planificación anticipada y administración del calendario de publicaciones según objetivos puntuales.</p>
+                </div>
+                <div class="col-6  col-md-3 col-xl-2">
+                    <img class="img-fluid iconos" src="img/icon3.png" alt="Diseño">
+                    <p class="titulo__parrafo">Análisis en profundidad de mejoras para tu marca, diseño y creación de piezas gráficas a medida.</p>
+                </div>
+                <div class="col-6 col-md-3 col-xl-2 ">
+                    <img class="img-fluid iconos" src="img/icon4.png" alt="Metricas">
+                    <p class="titulo__parrafo">Métricas de objetivos alcanzados, monitorización, reporte y plan de acción desde analisis de resultados.</p>
+                </div>
+            </div>
+        </section>
     </section>
 
-    <section class="container text-center">
-        <div class="row">
-            <div class="col-6 col-md-3 offset-xl-2 col-xl-2">
-                <img class="img-fluid" src="img/icon1.png" alt="Análisis">
-                <p>Segmentación y planificación de la estrategia de Social Media.</p>
-            </div>
-            <div class="col-6 col-md-3 col-xl-2">
-                <img class="img-fluid" src="img/icon2.png" alt="Administración">
-                <p>Administración y ejecución del calendario de publicaciones.</p>
-            </div>
-            <div class="col-6  col-md-3 col-xl-2">
-                <img class="img-fluid" src="img/icon3.png" alt="Diseño">
-                <p>Análisis de la marca, diseño y creación de piezas gráficas a medida.</p>
-            </div>
-            <div class="col-6 col-md-3 col-xl-2 ">
-                <img class="img-fluid" src="img/icon4.png" alt="Metricas">
-                <p>Monitorización, reporte y plan de acción desde analisis de resultados mensuales.</p>
-            </div>
-        </div>
-    </section>
+    
 
     <!-- Planes -->
     <section class="container sector">
@@ -330,6 +331,17 @@
             </div>
         </div>
     </section>
+    <!-- boton -->
+    <section class="container">
+        <div class="row">
+            <div class="offset-sm-2 col-sm-8 offset-md-3 col-md-6 text-center">
+                <a href="pages/contacto.html">
+                    <button type="button" class="botonVerde"><strong>QUIERO CONTRATAR UN PLAN!</strong></button>
+                </a>
+            </div>
+        </div>
+    </section>
+
 
 
     <!-- Logos de clientes -->
@@ -337,8 +349,7 @@
         <div class="container">
             <div class="row">
                 <div class="offset-md-3 col-md-6 offset-md-3">
-                    <h2 class="sector-clientes__titulo animate__animated animate__bounceInLeft">CLEINTES QUE CONFIARON
-                        EN NOSOTROS</h2>
+                    <h2 class="sector-clientes__titulo animate__animated animate__bounceInLeft"> CONFIARON EN NOSOTROS</h2>
                 </div>
             </div>
             <container class="container">
@@ -366,17 +377,27 @@
                 </div>
             </container>
         </div>
+        <!-- boton -->
+        <section class="container">
+            <div class="row">
+                <div class="offset-sm-2 col-sm-8 offset-md-3 col-md-6 text-center">
+                    <a href="pages/trabajos.html">
+                        <button type="button" class="botonNaranja"><strong>VER EJEMPLOS</strong></button>
+                    </a>
+                </div>
+            </div>
+        </section>
     </section>
 
 
 <!-- Footer -->
 <footer>
-    <section class="footer">
+    <section class="footer container-fluid">
         <div class="row">
             <h3 class="titulo-blanco text-center"><strong>COMO CONTACTARNOS</strong></h3>
         </div>
         <div class="text-center">
-            <p>Podés comunicarte con nosotros completando el formulario de la sección CONTACTO<br>
+            <p>Podés comunicarte con nosotros completando el <a href="pages/contacto.html">formulario</a> <br>
                 o nos podes escribir de forma directa por whatsapp.</p>
         </div>
         <div class="text-center">

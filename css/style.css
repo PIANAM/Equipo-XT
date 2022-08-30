@@ -2,6 +2,10 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.redes {
+  padding: 5px;
+}
+
 .banner {
   background-image: url("../img/back-banner-desktop.png");
   min-height: 450px;
@@ -24,21 +28,32 @@ body {
   min-height: 100vh;
 }
 
+.sectionGray {
+  background-color: #e4e4e4;
+  margin-top: 80px;
+  padding-bottom: 70px;
+}
+
 .titulo, .titulo__texto {
   margin: 50px 0px 15px 0px;
 }
 .titulo__parrafo {
   color: #3f3f3f;
-  font-size: 16px;
+  font-size: 18px;
+  padding-bottom: 10px;
 }
 
 .titulo__texto {
-  font-size: 30px;
+  font-size: 36px;
   text-align: center;
-  color: #fff;
   text-transform: uppercase;
-  background-color: #F47E20;
+  font-weight: bold;
   padding: 10px 0px 10px 0px;
+  color: #F47E20;
+}
+
+.iconos {
+  margin: 0px 5px 20px 5px;
 }
 
 .cards {
@@ -57,11 +72,11 @@ body {
   display: grid;
   grid-template-columns: 1fr 15fr;
   gap: 10px;
-  margin-top: 10px;
+  margin: 5px;
 }
 .cards__lista__item__texto {
   color: #3f3f3f;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .cards:hover {
@@ -77,13 +92,13 @@ body {
   border-color: #27A093;
   color: #3f3f3f;
   background-color: #f7f7f7;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 /* USAMOS UN MAP PARA DARLE COLORES A LAS CABECESRAS Y LOS PIES DE LOS PLANES */
 .headPlan--inicial {
-  font-size: 30px;
-  color: #fff;
+  font-size: 36px;
+  color: rgb(255, 255, 255);
   background-image: linear-gradient(to left, #27A093, #74F1BF);
   border-radius: 10px 10px 0px 0px;
   padding: 10px 0px 10px 0px;
@@ -91,17 +106,17 @@ body {
 }
 
 .headPlan--intermedio {
-  font-size: 30px;
-  color: #fff;
-  background-image: linear-gradient(to left, #ac9201, #dac401);
+  font-size: 36px;
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(to left, #F47E20, #f4bb20);
   border-radius: 10px 10px 0px 0px;
   padding: 10px 0px 10px 0px;
   text-align: center;
 }
 
 .headPlan--avanzado {
-  font-size: 30px;
-  color: #fff;
+  font-size: 36px;
+  color: rgb(255, 255, 255);
   background-image: linear-gradient(to left, #000000, #4e4e4e);
   border-radius: 10px 10px 0px 0px;
   padding: 10px 0px 10px 0px;
@@ -109,8 +124,8 @@ body {
 }
 
 .footPlan--inicial {
-  font-size: 30px;
-  color: #fff;
+  font-size: 36px;
+  color: rgb(255, 255, 255);
   background-image: linear-gradient(to left, #27A093, #74F1BF);
   border-radius: 0px 0px 10px 10px;
   padding: 10px 0px 10px 0px;
@@ -119,9 +134,9 @@ body {
 }
 
 .footPlan--intermedio {
-  font-size: 30px;
-  color: #fff;
-  background-image: linear-gradient(to left, #ac9201, #dac401);
+  font-size: 36px;
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(to left, #F47E20, #f4bb20);
   border-radius: 0px 0px 10px 10px;
   padding: 10px 0px 10px 0px;
   text-align: center;
@@ -129,8 +144,8 @@ body {
 }
 
 .footPlan--avanzado {
-  font-size: 30px;
-  color: #fff;
+  font-size: 36px;
+  color: rgb(255, 255, 255);
   background-image: linear-gradient(to left, #000000, #4e4e4e);
   border-radius: 0px 0px 10px 10px;
   padding: 10px 0px 10px 0px;
@@ -167,7 +182,7 @@ body {
   color: #fff;
 }
 .sector-clientes__titulo {
-  font-size: 30px;
+  font-size: 36px;
   text-align: center;
   margin: 20px;
 }
@@ -227,6 +242,13 @@ body {
   margin: 10px;
 }
 
+.footer a {
+  color: #F47E20;
+}
+.footer a:hover {
+  color: #27A093;
+}
+
 .footer2 {
   background-color: #565656;
   padding: 20px 0px 20px 0px;
@@ -247,7 +269,7 @@ body {
 }
 
 .contactForm hr {
-  margin: 20px 0px 20px 0px;
+  margin: 15px 0px 15px 0px;
 }
 
 .contactForm button {
@@ -266,6 +288,46 @@ body {
 
 .contactForm h2 {
   color: #F47E20;
+}
+
+.contactForm form {
+  padding: 15px 10px 15px 10px;
+}
+
+.contactForm form textarea {
+  min-height: 80px;
+}
+
+.botonNaranja {
+  background-color: #F47E20;
+  border: none;
+  color: white;
+  padding: 10px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+.botonNaranja:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.botonVerde {
+  background-color: #27A093;
+  border: none;
+  color: white;
+  padding: 10px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  border-radius: 10px;
+  margin-bottom: 90px;
+}
+.botonVerde:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /*# sourceMappingURL=style.css.map */

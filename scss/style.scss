@@ -1,7 +1,8 @@
 // tipografias 
 $tipografia: 'Poppins', sans-serif;
-$tamañoTipoTitulo: 30px;
-$tamañoTipoParrafo: 16px;
+$tamanoTextoTitulo: 36px;
+$tamanoTextoParrafo: 18px;
+$tamanoTextoBotones: 22px;
 
 // margenes
 $margenTitulo: 50px 0px 15px 0px;
@@ -9,7 +10,7 @@ $paddingTitulo: 10px 0px 10px 0px;
 
 // colores 
 $colorNaranja: #F47E20;
-$colorTextoTitulos: #fff;
+$colorTextoTitulos: rgb(255, 255, 255);
 $colorVerde: #27A093;
 $colorGradient: linear-gradient(to left, #27A093, #74F1BF);
 $colorParrafo: #3f3f3f;
@@ -18,6 +19,10 @@ $colorFooter2: #565656;
 
 body {
     font-family: $tipografia;
+}
+
+.redes {
+    padding: 5px;
 }
 
 .banner {
@@ -46,23 +51,35 @@ body {
 }
 
 
+
+.sectionGray {
+  background-color: #e4e4e4;  
+  margin-top: 80px;
+  padding-bottom: 70px;
+}
+
 .titulo {
     margin: $margenTitulo;
 
     &__parrafo {
         color: $colorParrafo;
-        font-size: $tamañoTipoParrafo;
+        font-size: $tamanoTextoParrafo;
+        padding-bottom: 10px;
     }
 }
 
 .titulo__texto {
     @extend .titulo;
-    font-size: $tamañoTipoTitulo;
+    font-size: $tamanoTextoTitulo;
     text-align: center;
-    color: $colorTextoTitulos;
     text-transform: uppercase;
-    background-color: $colorNaranja;
+    font-weight: bold;
     padding: $paddingTitulo;
+    color: $colorNaranja;
+}
+
+.iconos {
+    margin: 0px 5px 20px 5px;
 }
 
 .cards {
@@ -81,11 +98,11 @@ body {
             display: grid;
             grid-template-columns: 1fr 15fr;
             gap: 10px;
-            margin-top: 10px;
+            margin: 5px;
 
             &__texto {
                 color: $colorParrafo;
-                font-size: $tamañoTipoParrafo;
+                font-size: $tamanoTextoParrafo;
             }
         }
     }
@@ -104,7 +121,7 @@ body {
         border-color: $colorVerde;
         color: $colorParrafo;
         background-color: #f7f7f7;
-        font-size: $tamañoTipoParrafo;
+        font-size: $tamanoTextoParrafo;
     }
     
     
@@ -115,13 +132,13 @@ body {
 $colorCard: (
     /* Declaro las variables para el color de las card  */ 
     inicial: linear-gradient(to left, #27A093, #74F1BF),
-    intermedio: linear-gradient(to left, #ac9201, #dac401),
+    intermedio: linear-gradient(to left, #F47E20, #f4bb20),
     avanzado: linear-gradient(to left, #000000, #4e4e4e)
 ); 
 
 @each $plan, $color in $colorCard {
     .headPlan--#{$plan} {
-        font-size: $tamañoTipoTitulo;
+        font-size: $tamanoTextoTitulo;
         color: $colorTextoTitulos;
         background-image: $color;
         border-radius: 10px 10px 0px 0px;
@@ -132,7 +149,7 @@ $colorCard: (
 
 @each $plan, $color in $colorCard {
     .footPlan--#{$plan} {
-        font-size: $tamañoTipoTitulo;
+        font-size: $tamanoTextoTitulo;
         color: $colorTextoTitulos;
         background-image: $color;
         border-radius: 0px 0px 10px 10px;
@@ -171,7 +188,7 @@ $colorCard: (
     @include sectionColor ($colorVerde, 20px, 22px, #fff );
 
     &__titulo {
-        font-size: $tamañoTipoTitulo;
+        font-size: $tamanoTextoTitulo;
         text-align: center;
         margin: 20px;
     }
@@ -232,6 +249,16 @@ $colorCard: (
     }
 }
 
+.footer a {
+    color: $colorNaranja;
+
+    &:hover {
+       color: $colorVerde;
+    }
+}
+
+
+
 .footer2 {
     @include sectionColor ($colorFooter2, 20px 0px 20px 0px, 18px, #fff );
     
@@ -244,10 +271,12 @@ $colorCard: (
 
 .contactForm {
     @include sectionColor (#f7f7f7, 30px 0px 30px 20px, 17px, rgb(56, 56, 56) );
-    border-radius: 15px;  
+    border-radius: 15px;
+    
 }
+
 .contactForm hr {
-    margin: 20px 0px 20px 0px;
+    margin: 15px 0px 15px 0px;
 }
 
 .contactForm button {
@@ -268,8 +297,46 @@ $colorCard: (
     color: $colorNaranja;
 }
 
-   
+.contactForm form {
+    padding: 15px 10px 15px 10px;
+}
 
+.contactForm form textarea {
+    min-height: 80px;
+}
+
+.botonNaranja {
+    background-color: $colorNaranja;
+    border: none;
+    color: white;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: $tamanoTextoBotones;
+    border-radius: 10px;
+    margin-bottom: 40px;
+
+    &:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+     }
     
+}
 
+.botonVerde {
+    background-color: $colorVerde;
+    border: none;
+    color: white;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: $tamanoTextoBotones;
+    border-radius: 10px;
+    margin-bottom: 90px;
 
+    &:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+     }
+    
+}
